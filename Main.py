@@ -1,6 +1,7 @@
 
 ### ALBERT
 
+# petit programme python qui calcule le périmètre, l'air, et le volume de la pluspart des figure géométrique
 
 from math import *
 
