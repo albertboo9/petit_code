@@ -1,7 +1,6 @@
 
 ### ALBERT
-
-# petit programme python qui calcule le périmètre, l'air, et le volume de la pluspart des figure géométrique
+# Petit code python qui calcule l'air et le périmètre d'un carré, rectangle trianlge cercle trapeze
 
 from math import *
 
