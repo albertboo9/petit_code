@@ -5,6 +5,10 @@ from random import randrange
 class JeuCartes(object):
 
     def __init__(self):
+        
+        
+        
+        
         self.jeu=[]
         for i in range(0,4):
             for j in range(2,15) :
