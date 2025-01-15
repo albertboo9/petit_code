@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" manifest="index.appcache">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="nofollow">
+    <meta name="web-app-capable" content="yes">
+    <meta name="application-name" content="money Round">
+    <meta name="author" content="albert">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style type="text/css">
@@ -9,14 +13,14 @@
     </style>
   </head>
   <body>
-    <p class="para">
+    <p class="para" >
       <abbr title="Hypertext Markup Langage">HTML </abbr>
-      <ins>this is a text</ins>
+      <ins draggable="true">this is a text</ins>
       <del>delete text</del>
       <s>striked text</s>
       <sub>yo</sub>
       <sup>yo</sup>
-      <a href="tel:+(237)682755172">call us</a>
+      <a href="tel:+(237)682755172"> &phone; call us</a>
     </p>
     <picture>
       <source media="(min-width : 900px)" srcset="image1.jpg">
@@ -29,9 +33,13 @@
     <label for="fichier">fichier</label>
     <input type="range" name="range" id="range" min="0" max="100" step="2">
     <label for="range">range</label>
-    <input type="search" id="search">
+    <input type="search" placeholder="&#128269; search"  id="search">
     <label for="search">search</label>
     <input type="date" name="time" id="time">
     <label for="time">time</label>
+    <a href="essai.html" target="_blank" rel="noopener noreferrer"> page d'essai</a>
+    <progress value="10" max="100">10</progress>
+    
+    <iframe sandbox src="essai.html" frameborder="0"></iframe>
   </body>
 </html>
