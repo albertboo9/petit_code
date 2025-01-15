@@ -1,3 +1,59 @@
-.para{
-    color: brown;
+body {
+  margin: 0;
 }
+
+* {
+  transition: all 0.2s, height 1ms;
+}
+
+#container, #footer {
+    width: calc(100% - 2em);
+    color: #555;
+    padding: 1em;
+  }
+
+  #darkThemeUsed:checked ~ #container ,
+  #darkThemeUsed:checked ~ #footer{
+    color: #686869;
+  }
+
+  #container {
+    height: calc(100vh - 2em);
+    background: #eee;
+  }
+
+  #darkThemeUsed:checked ~ #container{
+    background-color: rgb(9, 41, 65);
+  }
+  #darkThemeUsed:checked ~ #footer{
+    background-color: rgb(1, 18, 29);
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 260px;
+    background: #2196f3;
+    margin-right: -304px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+  }
+
+  #sidebarShown:checked ~ #container #sidebar {
+    margin-right: 0;
+  }
+
+  #darkThemeUsed:checked ~ #container #sidebar {
+    background-color: #093152;
+  }
+
+  label[for="darkThemeUsed"]:after{
+    content: "No";
+  }
+
+  #darkThemeUsed:checked ~ #container label[for="darkThemeUsed"]:after{
+    content: "Yes";
+  }
