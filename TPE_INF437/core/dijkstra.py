@@ -148,7 +148,7 @@ class Dijkstra:
             E = sum(len(adj) for adj in graph.adjacency_list.values())
             if not graph.directed:
                 E = E // 2
-            
+    
             # Ratio complexité empirique / théorique
             empirical_time = end - start
             theoretical_complexity = (V + E) * math.log2(V + 1)
